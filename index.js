@@ -21,3 +21,13 @@
 //     return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
 //   }
 // }
+
+function BoardMember(name, training, homeState) {
+  this.name = name
+  this.training = training
+  this.homeState = homeState
+}
+
+BoardMember.prototype.veto = function () {
+  return "No, I must disagree"
+}
